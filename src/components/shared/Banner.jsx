@@ -1,9 +1,10 @@
 import Image from "next/image";
 import heroImg from "@/assets/heroImg.svg";
+import { GoArrowRight } from "react-icons/go";
 
 const Banner = () => {
   return (
-    <div className="bg-[#E1DAF1] mb-10">
+    <div className="bg-[#E1DAF1] my-10 py-20 ">
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <Image
@@ -26,7 +27,7 @@ const Banner = () => {
               Every teaching and learning journey is unique Following We&#39;ll
               help guide your way.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="rounded-full px-4 py-1 bg-[#5751E1] text-white flex gap-1 items-center font-semibold">Start free trial <GoArrowRight /></button>
           </div>
         </div>
       </div>
