@@ -61,13 +61,15 @@ const Navbar = () => {
           ) : user ? (
             <div className="flex items-center justify-center gap-4">
               <h2 className="font-bold hidden md:inline">Hello, {user.name}</h2>
-              <Image
+              <Link href={'/my-profile'}>
+                <Image
                 src={user.image}
                 width={40}
                 height={40}
                 alt="user"
-                className="rounded-full h-10 w-10 object-cover"
+                className="rounded-full h-10 w-10 object-cover cursor-pointer"
               />
+              </Link>
               <button
                 className="relative rounded-full px-5 py-1.5 font-semibold bg-[#FFC224] text-[#161439] transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group cursor-pointer"
                 onClick={async () => await authClient.signOut()}

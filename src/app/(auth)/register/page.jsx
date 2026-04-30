@@ -35,7 +35,7 @@ const RegisterPage = () => {
 
     if (res) {
       toast.success("Account created successfully 🎉");
-      router.push("/");
+      router.push("/login");
     }
   };
 

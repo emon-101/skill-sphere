@@ -9,7 +9,7 @@ const MyProfilePage = () => {
 
   if (isPending) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-50 via-white to-purple-50">
+      <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-indigo-50 via-white to-purple-50">
         <span className="loading loading-dots loading-lg"></span>
       </div>
     );
@@ -24,7 +24,7 @@ const MyProfilePage = () => {
   }
 
   return (
-    <section className="py-14 min-h-screen bg-gradient-to-r from-indigo-50 via-white to-purple-50">
+    <section className="py-14 min-h-screen bg-linear-to-r from-indigo-50 via-white to-purple-50">
       <div className="max-w-4xl mx-auto px-4">
         
         <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col items-center gap-6 text-center">
