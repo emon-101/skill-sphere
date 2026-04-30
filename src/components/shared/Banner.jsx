@@ -27,7 +27,15 @@ const Banner = () => {
               Every teaching and learning journey is unique Following We&#39;ll
               help guide your way.
             </p>
-            <button className="rounded-full px-4 py-1 bg-[#5751E1] text-white flex gap-1 items-center font-semibold">Start free trial <GoArrowRight /></button>
+            <button className="group relative rounded-full px-6 py-2 bg-[#5751E1] text-white font-semibold flex items-center gap-2 overflow-hidden transition-all duration-300 hover:shadow-2xl cursor-pointer">
+              <span className="relative z-10 flex items-center gap-2">
+                Start free trial
+                <GoArrowRight className="transition-all duration-300 group-hover:translate-x-2" />
+              </span>
+
+              {/* animated gradient shine */}
+              <span className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/20 to-transparent group-hover:left-full transition-all duration-700"></span>
+            </button>
           </div>
         </div>
       </div>

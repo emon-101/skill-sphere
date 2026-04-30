@@ -69,15 +69,21 @@ const Navbar = () => {
                 className="rounded-full h-10 w-10 object-cover"
               />
               <button
-                className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]"
+                className="relative rounded-full px-5 py-1.5 font-semibold bg-[#FFC224] text-[#161439] transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group cursor-pointer"
                 onClick={async () => await authClient.signOut()}
               >
                 Sign Out
+                <span className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/40 to-transparent group-hover:left-full transition-all duration-700"></span>
               </button>
             </div>
           ) : (
-            <button className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]">
-              <Link href={"/login"}>Sign In</Link>
+            <button className="relative rounded-full px-5 py-1.5 font-semibold bg-[#FFC224] text-[#161439] transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group">
+              <Link href="/login" className="relative z-10">
+                Sign In
+              </Link>
+
+              {/* animated shine */}
+              <span className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/40 to-transparent group-hover:left-full transition-all duration-700"></span>
             </button>
           )}
         </div>

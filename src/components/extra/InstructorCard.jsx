@@ -6,7 +6,7 @@ const InstructorCard = ({ instructor }) => {
     instructor;
   return (
     <div>
-      <div className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group">
+      <div className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition group cursor-pointer">
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-indigo-100 via-white to-purple-100 opacity-80 group-hover:opacity-100 transition"></div>
 
@@ -47,7 +47,7 @@ const InstructorCard = ({ instructor }) => {
           </p>
 
           {/* Button */}
-          <button className="mt-5 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition">
+          <button className="mt-5 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition cursor-pointer">
             View Profile
           </button>
         </div>
