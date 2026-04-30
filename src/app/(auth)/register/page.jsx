@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -8,6 +9,7 @@ import { toast } from "react-toastify";
 
 const RegisterPage = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
 
   const {
     register,
@@ -33,6 +35,7 @@ const RegisterPage = () => {
 
     if (res) {
       toast.success("Account created successfully 🎉");
+      router.push("/");
     }
   };
 

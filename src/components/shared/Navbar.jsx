@@ -66,18 +66,18 @@ const Navbar = () => {
                 width={40}
                 height={40}
                 alt="user"
-                className="rounded-full"
+                className="rounded-full h-10 w-10 object-cover"
               />
               <button
                 className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]"
                 onClick={async () => await authClient.signOut()}
               >
-                Logout
+                Sign Out
               </button>
             </div>
           ) : (
             <button className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]">
-              <Link href={"/login"}>Login</Link>
+              <Link href={"/login"}>Sign In</Link>
             </button>
           )}
         </div>
