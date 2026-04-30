@@ -1,6 +1,13 @@
+"use client";
+import { authClient } from "@/lib/auth-client";
 import NavLink from "./NavLink";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
+
   const links = (
     <>
       <li>
@@ -49,8 +56,30 @@ const Navbar = () => {
           <ul className="flex items-center justify-between gap-2">{links}</ul>
         </div>
         <div className="navbar-end gap-2">
-          <a className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]">SignIn</a>
-          <a className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]">SignOut</a>
+          {isPending ? (
+            <span className="loading loading-ring loading-xl"></span>
+          ) : user ? (
+            <div className="flex items-center justify-center gap-4">
+              <h2 className="font-bold hidden md:inline">Hello, {user.name}</h2>
+              <Image
+                src={user.image}
+                width={40}
+                height={40}
+                alt="user"
+                className="rounded-full"
+              />
+              <button
+                className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]"
+                onClick={async () => await authClient.signOut()}
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <button className="rounded-full px-4 py-1 font-semibold bg-[#FFC224]">
+              <Link href={"/login"}>Login</Link>
+            </button>
+          )}
         </div>
       </div>
     </div>
