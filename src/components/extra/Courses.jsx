@@ -32,7 +32,7 @@ const Courses = async () => {
         <Link href={"/courses"}>
           <button className="group relative rounded-full px-6 py-2 bg-[#5751E1] text-white font-semibold flex items-center gap-2 overflow-hidden transition-all duration-300 hover:shadow-2xl cursor-pointer">
             <span className="relative z-10 flex items-center gap-2">
-              Start free trial
+              Show All Courses
               <GoArrowRight className="transition-all duration-300 group-hover:translate-x-2" />
             </span>
 
