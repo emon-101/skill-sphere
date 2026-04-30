@@ -1,5 +1,6 @@
 import CourseCard from "@/components/extra/CourseCard";
 import { getCourses } from "@/lib/data";
+import 'animate.css';
 
 const CoursesPage = async ({ searchParams }) => {
   const courses = await getCourses();
@@ -12,7 +13,7 @@ const CoursesPage = async ({ searchParams }) => {
       )
     : courses;
   return (
-    <div className="lg:w-9/10 mx-auto px-2 mb-20">
+    <div className="lg:w-9/10 mx-auto px-2 mb-20 animate__animated animate__pulse">
       <h2 className="text-[#161439] font-bold text-3xl text-center my-10">
         All Courses
       </h2>

@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import NavLink from "./NavLink";
 import Link from "next/link";
 import Image from "next/image";
+import 'animate.css';
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -22,7 +23,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-[#E1DAF1]">
+    <div className="bg-[#E1DAF1] animate__animated animate__backInDown">
       <div className="navbar md:w-9/10 mx-auto px-2 ">
         <div className="navbar-start">
           <div className="dropdown">

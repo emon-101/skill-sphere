@@ -1,6 +1,7 @@
 import Image from "next/image";
 import heroImg from "@/assets/heroImg.svg";
 import { GoArrowRight } from "react-icons/go";
+import 'animate.css';
 
 const Banner = () => {
   return (
@@ -12,9 +13,9 @@ const Banner = () => {
             width={500}
             height={500}
             alt="student"
-            className=""
+            className="animate__animated animate__backInRight"
           ></Image>
-          <div>
+          <div className="animate__animated animate__backInLeft">
             <h1 className="text-3xl lg:text-5xl font-semibold mb-2">
               Never Stop{" "}
               <span className="font-bold text-[#161439]">Learning</span>

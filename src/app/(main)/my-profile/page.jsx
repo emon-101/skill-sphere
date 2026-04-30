@@ -2,6 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
+import 'animate.css';
 
 const MyProfilePage = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -24,7 +25,7 @@ const MyProfilePage = () => {
   }
 
   return (
-    <section className="py-14 min-h-screen bg-linear-to-r from-indigo-50 via-white to-purple-50">
+    <section className="py-14 min-h-screen bg-linear-to-r from-indigo-50 via-white to-purple-50 animate__animated animate__backInDown">
       <div className="max-w-4xl mx-auto px-4">
         
         <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 flex flex-col items-center gap-6 text-center">
