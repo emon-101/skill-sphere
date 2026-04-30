@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdStarRate } from "react-icons/md";
 
 const CourseCard = ({ course }) => {
-  const { title, instructor, rating, description, image } = course;
+  const { id, title, instructor, rating, description, image } = course;
   return (
     <div>
       <div className="card bg-base-100 shadow-sm w-full h-full">
@@ -34,7 +35,9 @@ const CourseCard = ({ course }) => {
             </p>
           </div>
           <div className="card-actions justify-end mt-2">
-            <button className="btn btn-primary w-full">View Details</button>
+            <Link href={`/course/${id}`} className="w-full">
+                <button className="btn btn-primary w-full">View Details</button>
+            </Link>
           </div>
         </div>
       </div>
