@@ -7,7 +7,7 @@ const Learning = () => {
         
         <div className="text-center mb-10">
           <h2 className="text-3xl font-semibold text-[#161439]">
-            📘 Learning Tips
+            Learning Tips
           </h2>
           <p className="mt-3 text-gray-500 max-w-2xl mx-auto">
             Boost your productivity and learn smarter with proven study techniques

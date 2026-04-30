@@ -4,7 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Banner = () => {
   return (
-    <div className="bg-[#E1DAF1] my-10 py-20 ">
+    <div className="bg-[#E1DAF1] mb-10 py-20 ">
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <Image
