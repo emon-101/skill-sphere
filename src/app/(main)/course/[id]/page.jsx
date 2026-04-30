@@ -3,6 +3,16 @@ import Image from "next/image";
 import { IoIosTime } from "react-icons/io";
 import { MdPlaylistAddCheckCircle, MdStarRate } from "react-icons/md";
 
+export const generateMetadata = async({params}) => {
+    const {id} = await params;
+    const courses = await getCourseDetails(id);
+
+    return {
+        title: courses.title,
+        description: courses.details,
+    };
+}
+
 const CourseDetailsPage = async ({ params }) => {
   const { id } = await params;
   const courseDetails = await getCourseDetails(id);

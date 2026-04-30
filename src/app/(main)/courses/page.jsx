@@ -2,6 +2,11 @@ import CourseCard from "@/components/extra/CourseCard";
 import { getCourses } from "@/lib/data";
 import 'animate.css';
 
+export const metadata = {
+  title: "All Courses",
+  description: "A modern online learing web application",
+};
+
 const CoursesPage = async ({ searchParams }) => {
   const courses = await getCourses();
   const params = await searchParams;

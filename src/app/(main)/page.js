@@ -4,6 +4,11 @@ import Learning from "@/components/extra/Learning";
 import TrendingCourses from "@/components/extra/TrendingCourses";
 import Banner from "@/components/shared/Banner";
 
+export const metadata = {
+  title: "Skill Sphere | Homepage",
+  description: "A modern online learing web application",
+};
+
 
 export default function Home() {
   return (
