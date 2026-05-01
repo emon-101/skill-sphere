@@ -2,6 +2,10 @@
 
 A modern online learning platform where users can explore courses, view detailed lessons, and enroll in skill-based programs such as Web Development, Design, Marketing, and more.
 
+<p align="center">
+  <img src="./assets/skillsphere.png" alt="Skill Sphere" />
+</p
+
 ---
 
 ## 🌐 Live Website
@@ -36,6 +40,7 @@ Skill Sphere is built to provide a seamless and engaging learning experience for
 - React.js
 - Tailwind CSS
 - DaisyUI
+- Better Auth
 
 ### Authentication
 - Better Auth / Custom Auth Client
@@ -52,10 +57,6 @@ Skill Sphere is built to provide a seamless and engaging learning experience for
 ### Image Optimization
 - Next/Image
 
----
-
-
----
 
 ## 📦 NPM Packages Used
 
@@ -64,6 +65,7 @@ npm install react-hook-form
 npm install react-toastify
 npm install react-icons
 npm install daisyui
+npm install animate.css
 
 ## 📁 Project Structure
 app/
