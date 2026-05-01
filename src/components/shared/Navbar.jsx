@@ -51,7 +51,9 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-xl text-[#06235B] font-bold">SKillSphere</a>
+          <Link href={'/'}>
+            <button className="text-xl lg:text-2xl text-[#06235B] font-bold cursor-pointer hover:scale-102">Skill<span className="font-black text-[#161439]">Sphere</span></button>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex items-center justify-between gap-2">{links}</ul>
