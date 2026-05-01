@@ -3,7 +3,7 @@
 A modern online learning platform where users can explore courses, view detailed lessons, and enroll in skill-based programs such as Web Development, Design, Marketing, and more.
 
 <p align="center">
-  <img src="./assets/skillsphere.png" alt="Skill Sphere" />
+  <img src="./src/assets/skill-sphere.png" alt="Skill Sphere" />
 </p
 
 ---
