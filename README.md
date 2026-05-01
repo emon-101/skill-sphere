@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 Skill Sphere
 
-## Getting Started
+A modern online learning platform where users can explore courses, view detailed lessons, and enroll in skill-based programs such as Web Development, Design, Marketing, and more.
 
-First, run the development server:
+---
+
+## 🌐 Live Website
+🔗 https://skill-sphere-eh.vercel.app/
+
+---
+
+## 🎯 Project Purpose
+
+Skill Sphere is built to provide a seamless and engaging learning experience for users who want to develop real-world skills. The platform allows users to discover trending courses, explore detailed curriculum, and manage their profile efficiently.
+
+---
+
+## 🚀 Key Features
+
+- 📚 Explore courses by category (Development, Design, Marketing, etc.)
+- 🔥 Trending courses based on ratings
+- 📖 Detailed course page with curriculum
+- 👤 User authentication (Register & Login)
+- 🧑 User profile management
+- ✏️ Edit profile (name & photo)
+- 🔐 Protected routes for secure access
+- ⚡ Fast and optimized performance with Next.js
+- 🎨 Modern and responsive UI design
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- Next.js (App Router)
+- React.js
+- Tailwind CSS
+- DaisyUI
+
+### Authentication
+- Better Auth / Custom Auth Client
+
+### State & Forms
+- React Hook Form
+
+### Notifications
+- React Toastify
+
+### Icons
+- React Icons
+
+### Image Optimization
+- Next/Image
+
+---
+
+
+---
+
+## 📦 NPM Packages Used
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+npm install react-hook-form
+npm install react-toastify
+npm install react-icons
+npm install daisyui
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
+app/
+├── page.jsx
+├── layout.jsx
+├── login/
+├── register/
+├── course/
+│ └── [id]/
+├── profile/
+├── edit-profile/
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+components/
+├── CourseCard.jsx
+├── Navbar.jsx
+├── Footer.jsx
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+lib/
+├── auth-client.js
+├── data.js
 
-## Learn More
+public/
 
-To learn more about Next.js, take a look at the following resources:
+🧠 Core Functionalities
+🔹 Course System
+Display courses dynamically
+Show instructor, rating, and duration
+Detailed curriculum for each course
+🔹 Authentication System
+Register & login with email/password
+Session management
+Protected routes
+🔹 User Profile
+View user information
+Update name and profile image
+Logout functionality
+📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fully responsive across:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💻 Desktop
+📱 Tablet
+📲 Mobile
+🔮 Future Improvements
+🎥 Video lesson integration
+💳 Payment system for premium courses
+📊 User progress tracking
+⭐ Course reviews & ratings
+📚 Enrolled courses dashboard
+🌙 Dark mode support
+👨‍💻 Author
 
-## Deploy on Vercel
+Emon Hossain
+🔗 GitHub: https://github.com/emon-101
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⭐ Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you like this project, consider giving it a ⭐ on GitHub!
