@@ -86,39 +86,39 @@ lib/
 ├── data.js
 
 public/
-
-🧠 Core Functionalities
-🔹 Course System
+```
+## 🧠 Core Functionalities
+- 🔹 Course System
 Display courses dynamically
 Show instructor, rating, and duration
 Detailed curriculum for each course
-🔹 Authentication System
+- 🔹 Authentication System
 Register & login with email/password
 Session management
 Protected routes
-🔹 User Profile
+- 🔹 User Profile
 View user information
 Update name and profile image
 Logout functionality
-📱 Responsive Design
+## 📱 Responsive Design
 
-Fully responsive across:
+# Fully responsive across:
 
-💻 Desktop
-📱 Tablet
-📲 Mobile
-🔮 Future Improvements
-🎥 Video lesson integration
-💳 Payment system for premium courses
-📊 User progress tracking
-⭐ Course reviews & ratings
-📚 Enrolled courses dashboard
-🌙 Dark mode support
-👨‍💻 Author
+### 💻 Desktop
+### 📱 Tablet
+### 📲 Mobile
+# 🔮 Future Improvements
+### 🎥 Video lesson integration
+### 💳 Payment system for premium courses
+### 📊 User progress tracking
+### ⭐ Course reviews & ratings
+### 📚 Enrolled courses dashboard
+### 🌙 Dark mode support
+### 👨‍💻 Author
 
-Emon Hossain
-🔗 GitHub: https://github.com/emon-101
+# Emon Hossain
+### 🔗 GitHub: https://github.com/emon-101
 
-⭐ Support
+## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+#### If you like this project, consider giving it a ⭐ on GitHub!
