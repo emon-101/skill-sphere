@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const RegisterPage = () => {
@@ -39,16 +39,41 @@ const RegisterPage = () => {
     }
   };
 
+  const handleGoogleLogin = async () => {
+    try {
+      const { data, error } = await authClient.signIn.social({
+        provider: "google",
+        callbackURL: "/",
+      });
+
+      if (error) {
+        toast.error(error.message);
+      } else {
+        toast.success("Redirecting to Google...");
+      }
+    } catch (err) {
+      toast.error("Google login failed");
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-indigo-50 to-purple-50 px-4">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg">
-        
         <h2 className="text-2xl font-bold text-center text-[#161439] mb-2">
           Create Account
         </h2>
+        {/* Google Button */}
+        <button
+          onClick={handleGoogleLogin}
+          className="w-full flex items-center justify-center gap-2 border py-2 rounded-lg hover:bg-gray-100 transition my-4 cursor-pointer"
+        >
+          <FaGoogle className="text-red-500" />
+          Continue with Google
+        </button>
+
+        <div className="divider">OR</div>
 
         <form onSubmit={handleSubmit(handleRegisterFunc)} className="space-y-4">
-          
           <div>
             <input
               type="text"
@@ -56,7 +81,9 @@ const RegisterPage = () => {
               className="w-full p-2 rounded-lg bg-gray-100"
               placeholder="Name"
             />
-            {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+            {errors.name && (
+              <p className="text-red-500">{errors.name.message}</p>
+            )}
           </div>
 
           <div>
@@ -66,7 +93,9 @@ const RegisterPage = () => {
               className="w-full p-2 rounded-lg bg-gray-100"
               placeholder="Photo URL"
             />
-            {errors.photo && <p className="text-red-500">{errors.photo.message}</p>}
+            {errors.photo && (
+              <p className="text-red-500">{errors.photo.message}</p>
+            )}
           </div>
 
           <div>
@@ -76,7 +105,9 @@ const RegisterPage = () => {
               className="w-full p-2 rounded-lg bg-gray-100"
               placeholder="Email"
             />
-            {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+            {errors.email && (
+              <p className="text-red-500">{errors.email.message}</p>
+            )}
           </div>
 
           <div className="relative">

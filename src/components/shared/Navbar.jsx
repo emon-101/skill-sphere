@@ -82,7 +82,8 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <button className="relative rounded-full px-5 py-1.5 font-semibold bg-[#FFC224] text-[#161439] transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group">
+            <div className="flex gap-2">
+              <button className="relative rounded-full px-5 py-1.5 font-semibold bg-[#161439] text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group">
               <Link href="/login" className="relative z-10">
                 Sign In
               </Link>
@@ -90,6 +91,15 @@ const Navbar = () => {
               {/* animated shine */}
               <span className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/40 to-transparent group-hover:left-full transition-all duration-700"></span>
             </button>
+            <button className="relative rounded-full px-5 py-1.5 font-semibold bg-[#161439] text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 overflow-hidden group">
+              <Link href="/register" className="relative z-10">
+                Sign Up
+              </Link>
+
+              {/* animated shine */}
+              <span className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/40 to-transparent group-hover:left-full transition-all duration-700"></span>
+            </button>
+            </div>
           )}
         </div>
       </div>
